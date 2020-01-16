@@ -1,0 +1,38 @@
+
+.picture{
+    height: 100%;
+    width: 100%;
+}
+
+#leftdiv{
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    padding: 50px;
+}
+
+.titleform{
+    font-size: 28px;
+    padding-bottom: 50px;
+    text-transform: uppercase;
+}
+
+.text{
+    font-size: 22px;
+    text-align: justify;
+}
+
+#textcolor{
+    color: blue;
+}
+
+.inputfield{
+    margin-top: 10px;
+}
+
+.footertext{
+    padding-top: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    opacity: 80%;
+}

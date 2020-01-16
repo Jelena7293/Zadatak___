@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Signup and email - Figma</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+          crossorigin="anonymous">
+    <script src="js/ajax.js"></script>
+</head>
+<body style="background-color: lightgray">
+<br>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+            <div id="leftdiv">
+                <form name="myForm">
+                    <p id="textcolor" class="titleform">Sample logo</p>
+                    <p class="text">You need just <strong>30</strong> seconds to enjoy your mobile workforce.<a id="textcolor" class="text"> Just tell us:</a></p><br>
+                    <input type="text" class="form-control" name="email" id="email" placeholder="Your company e-mail"><br>
+                    <input type="text" class="form-control" name="companyName" id="companyName" placeholder="Company name"><br>
+                    <input type="text" class="form-control" name="username" id="username" placeholder="Username" required><br>
+                    <input type="text" class="form-control" name="password" id="password" placeholder="Password"><br>
+                    <div class="input-group mb-2">
+                        <input type="text" class="form-control" name="companyUrl" id="companyUrl" placeholder="Pick company url">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">.company.com</div>
+                        </div>
+                    </div><br><br>
+                    <button type="button" id="btnReady" disabled class="btn btn-primary btn-lg btn-block">And you are ready to go!</button>
+                    <br>
+                    <p class="footertext">© 2015 Copyright Company, Inc.  ·  Terms of Service  ·  Privacy Policy</p>
+                </form>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <img class="picture" src="img/pic.png">
+        </div>
+    </div>
+</div>
+<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>-->
+<script src="javaScript.js"></script>
+</body>
+</html>
