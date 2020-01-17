@@ -39,14 +39,15 @@ document.getElementById("password").addEventListener("keyup", function() {
 
 document.getElementById("companyUrl").addEventListener("keyup", function() {
     var companyUrl = document.getElementById('companyUrl').value;
-    if (companyUrl == "") {
+    var spec = /^(?=.*[!@#$%^&*"])/;
+    if (companyUrl == "" || companyUrl.match(spec)) {
         document.getElementById("companyUrl").style.borderColor = "red";
     } else {
         document.getElementById("companyUrl").style.borderColor = "green";
     }
 });
 
-$("input[type='text']").on("keyup", function(){
+$("input[type='text'], input[type='password']").on("keyup", function(){
     var email = document.forms["myForm"]["email"].value;
     var companyName = document.forms["myForm"]["companyName"].value;
     var usrName = document.forms["myForm"]["username"].value;
@@ -55,8 +56,9 @@ $("input[type='text']").on("keyup", function(){
 
     var letters = /^[0-9a-zA-Z]+$/;
     var pass=  /^(?=.*\d)(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z]).{8,16}$/;
+    var spec = /^(?=.*[!@#$%^&*"])/;
 
-    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email) && companyName != "" && companyName.length < 60 && companyName.match(letters) && usrName != "" && pswrd != "" && pswrd.match(pass) && companyUrl != "")
+    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email) && companyName != "" && companyName.length < 60 && companyName.match(letters) && usrName != "" && pswrd != "" && pswrd.match(pass) && companyUrl != "" && !companyUrl.match(spec))
     {
         document.getElementById('btnReady').removeAttribute("disabled");
     }
@@ -76,6 +78,7 @@ document.getElementById("btnReady").addEventListener("click", function () {
 
     console.log(info);
     clearInputField();
+    document.getElementById('btnReady').setAttribute("disabled", "disabled");
 });
 
 function clearInputField() {

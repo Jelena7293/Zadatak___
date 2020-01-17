@@ -4,6 +4,8 @@
     <list default="true" id="8b3b540d-6fa7-4e6a-b2f1-0486baca01dd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/javaScript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,9 +16,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -62,6 +64,7 @@
       <workItem from="1579166648567" duration="33756000" />
       <workItem from="1579209915088" duration="55000" />
       <workItem from="1579210480906" duration="117000" />
+      <workItem from="1579250043973" duration="7529000" />
     </task>
     <servers />
   </component>

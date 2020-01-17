@@ -4,28 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Signup and email - Figma</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet"
           href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
           crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Andada&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <script src="js/ajax.js"></script>
 </head>
-<body style="background-color: lightgray">
+<body>
 <br>
 <div class="container">
     <div class="row">
-        <div class="col-sm-6">
-            <div id="leftdiv">
+        <div class="col-sm-6" id="leftdiv">
                 <form name="myForm">
-                    <p id="textcolor" class="titleform">Sample logo</p>
-                    <p class="text">You need just <strong>30</strong> seconds to enjoy your mobile workforce.<a id="textcolor" class="text"> Just tell us:</a></p><br>
-                    <input type="text" class="form-control" name="email" id="email" placeholder="Your company e-mail"><br>
-                    <input type="text" class="form-control" name="companyName" id="companyName" placeholder="Company name"><br>
-                    <input type="text" class="form-control" name="username" id="username" placeholder="Username" required><br>
-                    <input type="text" class="form-control" name="password" id="password" placeholder="Password"><br>
+                    <p id="textcolor" class="titleform" >Sample logo</p>
+                    <p class="text">You need just <strong>30</strong> seconds to enjoy your mobile workforce.<a id="textcolor"> Just tell us:</a></p><br>
+                    <input type="text" class="form-control" name="email" id="email" autocomplete="off" placeholder="Your company e-mail"><br>
+                    <input type="text" class="form-control" name="companyName" id="companyName" autocomplete="off" placeholder="Company name"><br>
+                    <input type="text" class="form-control" name="username" id="username" autocomplete="off" placeholder="Username" required><br>
+                    <input type="password" class="form-control" name="password" id="password" autocomplete="off" placeholder="Password"><br>
                     <div class="input-group mb-2">
-                        <input type="text" class="form-control" name="companyUrl" id="companyUrl" placeholder="Pick company url">
+                        <input type="text" class="form-control" name="companyUrl" id="companyUrl" autocomplete="off" placeholder="Pick company url">
                         <div class="input-group-prepend">
                             <div class="input-group-text">.company.com</div>
                         </div>
@@ -34,9 +34,8 @@
                     <br>
                     <p class="footertext">© 2015 Copyright Company, Inc.  ·  Terms of Service  ·  Privacy Policy</p>
                 </form>
-            </div>
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-6 rightdiv">
             <img class="picture" src="img/pic.png">
         </div>
     </div>

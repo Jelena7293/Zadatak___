@@ -1,7 +1,20 @@
 
+*{
+    font-family: 'Andada', serif;
+}
+
+body{
+    background-color: lightgray;
+}
+
 .picture{
     height: 100%;
     width: 100%;
+    opacity: 100%;
+}
+
+.rightdiv{
+    padding: 0;
 }
 
 #leftdiv{
@@ -21,6 +34,8 @@
     font-size: 22px;
     text-align: justify;
 }
+
+
 
 #textcolor{
     color: blue;
